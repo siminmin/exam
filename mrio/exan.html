@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<title>hahah </title>
+      <link rel="stylesheet" type="text/css" href="css/mario.css">
+	<script type="text/javascript">
+      // function dog(){
+
+      // }
+      // dog.prototype.shout=function(){
+      // 	alert("xiaogou");
+
+      // }
+      // var dog1=new dog();
+      // dog1.shout();
+      // var dog2=new dog();
+      // dog2.shout();
+
+      // var i=new Number(20);
+      // Number.prototype.add=function(a){
+      // 	return this+a;
+      // }
+      // alert(i.add(10).add(30));//10+10+30
+      // var b=90;
+      // alert(b.add(40));
+
+      // var arr1=new Array(3);
+      // arr1[0]="George"
+      // arr1[1]="John"
+      // arr1[2]="Thomas"
+      // for(var i=0;i<arr1.length;i++){
+      // 	document.write(arr1[i]+" ");
+      // }
+      // arr1.reverse();
+      // document.write("<br/>");
+      // for(var i=0;i<arr1.length;i++){
+      // 	document.write(arr1[i]+" ");
+      // }
+      // Array.prototype.find=function(val){
+      // 	for(var i=0;i<this.length;i++){
+      // 		if(val==this[i]){
+      // 			return i;
+     
+      // 		}
+      // 	}
+      // 	return -1;
+      // }
+      // document.write("John 下标="+arr1.find("John"));
+
+
+      // 马里奥游戏
+      function Mario(){
+      	this.x=0;
+      	this.y=0;
+      	this.move=function(direct){
+      		switch(direct){
+      			case 1:
+      			window.alert("mario 右移动");
+                        var mymario=document.getElementById("mymario");
+                        alert(mymario.style.top);
+      			break;
+      		}
+      	}
+      }
+      //chuan jian mario duixiang
+      var mario=new Mario();
+      //quanjuhanshu
+      function marioMove(direct){
+            switch(direct){
+                  case 1:
+                       mario.move(direct);
+                       break;
+                  case 0:
+                       break;
+                  case 2:
+                       break;
+                  case 3:
+                       break;
+            }
+      }
+      
+	</script>
+</head>
+<body>
+<div class="gamediv">
+<table class="controlcenter" border="1px">
+     
+      
+            <tr>
+                  <td colspan="3">游戏键盘</td>
+                  
+            </tr>
+            <tr>
+                  <td>**</td>
+                  <td><input type="button value="↓↑"></td>
+                  <td></td>
+                
+            </tr>
+            <tr>
+                  <td>**</td>
+                  <td>**</td>
+                  <td><input type="button" value="→" onclick="marioMove(1)"/></td>
+                
+            </tr>
+            <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                
+            </tr>
+      
+</table>
+<img id="mymario" style="width:40px;left:100px;top:50px;position:absolute;" src="images/1.jpg"/>	
+</div>
+
+
+
+</body>
+</html>
