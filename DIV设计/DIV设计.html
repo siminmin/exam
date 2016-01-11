@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<title>DIV设计</title>
+	<style type="text/css">
+       *{
+       	margin: 0px ;
+       	padding:0px ;
+       }
+       html,
+       body {
+       height: 100%;
+       
+       }
+       .warp{
+       	display:-webkit-box;
+            display:-moz-box;
+            display:box;
+       	height: 100%;
+       	width:100%;
+       	-webkit-box-pack: center;
+            -webkit-box-align: center;
+       }
+	   .contain{
+	   	display: -webkit-box;
+            display:-moz-box;
+            display:box;
+	   	-webkit-box-orient: vertical;
+	   	width:300px;
+	   	height:300px;
+
+	   }
+	   .contain .one{
+	   	display: -webkit-box;
+            display:-moz-box;
+            display:box;
+	   	-webkit-box-flex:1;
+	   	-webkit-box-pack:center;
+	   
+
+
+	   }
+	   .one > div{
+	   	background: blanchedalmond;
+	   	box-sizing: border-box;
+	   	width:100px;
+	   	height:100px;
+	   	box-shadow:2px 2px 11px rgb(218, 213, 206), -2px 0 11px rgb(218, 213, 206);
+	   }
+	   .contain .two{
+	      display: -webkit-box;
+            display:-moz-box;
+            display:box;
+            -webkit-box-pack: center;
+            -webkit-box-flex: 1;
+         }
+
+	   
+	   .two > div {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            box-shadow: 2px 2px 11px rgb(218, 213, 206), -2px 0 11px rgb(218, 213, 206);
+         }
+         .two div:nth-of-type(1){
+           background: lavender;
+         }
+        .two div:nth-of-type(2){
+          display: -webkit-box;
+          display:-moz-box;
+          display:box;
+          -webkit-box-pack:center;
+          -webkit-box-align:center;
+        }
+       .two div:nth-of-type(3){
+         background: honeydew;
+        }
+       .contain .three{
+       	display: -webkit-box;
+            display:-moz-box;
+            display:box;
+       	-webkit-box-flex:1;
+       	-webkit-box-pack:center;
+       }
+       .three > div{
+       	width:100px;
+       	height: 100px;
+       	background: beige;
+       	box-sizing:border-box;
+       	box-shadow:2px 2px 11px rgb(218, 213, 206), -2px 0 11px rgb(218, 213, 206);
+      
+
+       }
+     
+	</style>
+</head>
+<body>
+<div class="warp">
+<div class="contain">
+
+<div class="one">
+	<div></div>
+</div>
+<div class="two" >
+	<div></div>
+	<div><img src="images/2.png" style="width:24px;height:24px;" /></div>
+	<div></div>
+</div>
+<div class="three">
+	<div></div>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
