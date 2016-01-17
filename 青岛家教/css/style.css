@@ -1,0 +1,96 @@
+*{
+	margin:0px;
+	padding:0px;
+
+}
+ body {
+      font-family: "新宋体";
+      font-size: 12px;
+  }
+.warp{
+	background: #497DAF;
+	  display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      -webkit-box-orient: vertical;
+	 
+
+}
+.contain{
+	width:710px;
+	margin: 10px auto;
+    background: #fff;
+    border-radius: 30px;
+}
+.top{
+	
+    
+    width: 710px;
+}
+.top img{
+	margin-left: 40px;
+	margin-top:10px;
+}
+.top tr:last-child td{
+    padding-right: 36px;
+}
+.top a{
+	
+	text-decoration: none;
+	color: rgb(255, 0, 153);
+	padding-left: 5px;
+}
+
+.toptext{
+	color:grey;
+    text-align:center;
+    line-height: 20px;
+}
+.formtable{
+	width:710px;
+	
+	display:-webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+table {
+	display: table;
+	border-collapse: collapse;
+	
+
+}
+.table1{
+	width:640px;
+
+}
+
+span{
+	color: red;
+}
+strong{
+	font-size: 13px;
+	color:#003399;
+	line-height: 25px;
+}
+th{
+	background: #eee;
+}
+td{
+	font-size:12px;
+	line-height:20px;
+	padding:2px 2px;
+
+}
+.table1 tr td:first-child{
+	width: 136px;
+}
+#table2 tr td{
+	width:504px;
+}
+#table3 tr td{
+	width:504px;
+}
+.tablefoot{
+	height: 45px;
+
+}
